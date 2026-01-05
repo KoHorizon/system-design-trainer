@@ -16,7 +16,7 @@ Databases are the hardest component to scale. This module covers the fundamental
 
 ```mermaid
 flowchart TB
-    subgraph "SQL (Relational)"
+    subgraph SQL ["SQL (Relational)"]
         direction TB
         T1[Users Table]
         T2[Orders Table]
@@ -25,20 +25,20 @@ flowchart TB
         T2 -->|Foreign Key| T3
     end
     
-    subgraph "NoSQL (Document)"
+    subgraph DOC ["NoSQL (Document)"]
         direction TB
-        D1[User Document<br/>includes orders<br/>includes products]
+        D1["User Document<br/>contains orders, products"]
     end
     
-    subgraph "NoSQL (Key-Value)"
+    subgraph KV ["NoSQL (Key-Value)"]
         direction TB
-        KV1["user:123 → {data}"]
-        KV2["order:456 → {data}"]
+        KV1["user:123 → data"]
+        KV2["order:456 → data"]
     end
     
-    subgraph "NoSQL (Wide Column)"
+    subgraph WC ["NoSQL (Wide Column)"]
         direction TB
-        WC1[Row Key → Column Families<br/>user:123 → profile:{}, orders:{}]
+        WC1["Row Key → Column Families<br/>user:123 → profile, orders"]
     end
 ```
 
