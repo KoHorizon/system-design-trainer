@@ -537,4 +537,4 @@ Answer without looking at notes. Give yourself 1 point for each correct answer (
 ## Next Steps
 
 Once you can score 16+ on Section 6 without notes, move to:
-**[Module 2: Scaling](../scaling/concepts/concepts.md)**
+**[Module 2: Scaling](../../scaling/concepts/concepts.md)**

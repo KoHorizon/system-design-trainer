@@ -623,4 +623,4 @@ Availability (serial) = ∏Aᵢ
 
 5. **The critical numbers**: Memorize the latency table. It's the foundation of all design intuition.
 
-**Next module**: [Scaling](../scaling/concepts/concepts.md) - How to handle growth when these numbers aren't enough.
+**Next module**: [Scaling](../../scaling/concepts/concepts.md) - How to handle growth when these numbers aren't enough.
