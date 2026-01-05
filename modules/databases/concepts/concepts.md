@@ -953,4 +953,4 @@ flowchart TD
 
 **The golden rule**: Start with PostgreSQL. Add caching. Add read replicas. Only shard when you absolutely must.
 
-**Next module**: [Caching](../caching/concepts/concepts.md) - How to avoid hitting the database.
+**Next module**: [Caching](../../caching/concepts/concepts.md) - How to avoid hitting the database.

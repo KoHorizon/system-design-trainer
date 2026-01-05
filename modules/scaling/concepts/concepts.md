@@ -832,4 +832,4 @@ Need SSL termination?        → L7
 
 5. **Plan for failure**: Horizontal scaling gives you redundancy. Use it.
 
-**Next module**: [Databases](../databases/concepts/concepts.md) - The hardest thing to scale.
+**Next module**: [Databases](../../databases/concepts/concepts.md) - The hardest thing to scale.

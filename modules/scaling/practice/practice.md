@@ -634,4 +634,4 @@ def check_rate_limit(ip):
 ## Next Steps
 
 Once comfortable with scaling concepts, move to:
-**[Module 3: Databases](../databases/concepts/concepts.md)**
+**[Module 3: Databases](../../databases/concepts/concepts.md)**
