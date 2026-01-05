@@ -78,10 +78,10 @@ graph TB
 ### The Latency Pyramid (Visual Memorization)
 
 ```
-                    △ L1 Cache (1ns)
-                   ╱ ╲
-                  ╱   ╲ L2 Cache (4ns)
-                 ╱     ╲
+                    [] L1 Cache (1ns)
+                   ╱  ╲
+                  ╱    ╲ L2 Cache (4ns)
+                 ╱      ╲
                 ╱ Memory ╲ (100ns = 100x L1)
                ╱    ▽     ╲
               ╱     SSD    ╲ (100μs = 1000x Memory)
@@ -89,7 +89,7 @@ graph TB
             ╱    Same DC     ╲ (500μs = 5x SSD)
            ╱        ▽         ╲
           ╱     Cross-Region   ╲ (150ms = 300x Same DC)
-         ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+         ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
 ```
 
 **Memory trick**: Each level is roughly 10-1000x slower than the one above.

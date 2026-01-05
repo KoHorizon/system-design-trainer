@@ -97,11 +97,11 @@ Cost ($)
     │                     ╱
     │                  ╱
     │              ╱
-    │          ╱  ─────────────── Horizontal (linear)
-    │       ╱─────
-    │   ╱───
-    │╱──
-    └─────────────────────────────────────
+    │          ╱ 
+    │       ╱
+    │   ╱ ─────────────────────────── Horizontal (linear)
+    │╱
+    └───────────────────────────────────────────────────────
                               Capacity
 ```
 
@@ -507,9 +507,7 @@ The load balancer itself is a single point of failure. Solution: redundant load 
 
 ```mermaid
 flowchart TB
-    subgraph "DNS"
-        DNS[example.com<br/>→ Multiple IPs]
-    end
+    DNSRecord[example.com<br/>→ Multiple IPs]
     
     subgraph "Load Balancer Tier"
         LB1[LB Primary<br/>192.168.1.1]
@@ -523,7 +521,7 @@ flowchart TB
         S3[Server 3]
     end
     
-    DNS --> VIP
+    DNSRecord --> VIP
     VIP --> LB1
     VIP -.->|Failover| LB2
     LB1 & LB2 --> S1 & S2 & S3
